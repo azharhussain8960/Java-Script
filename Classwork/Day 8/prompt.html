@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 heading></h1>
+    <script>
+      // let age = prompt("Please Enter your Age")
+      // if (age >=18) {
+      //     alert("You Are  Elligeble,You Can Vote")
+      // }else {
+      //     alert("You Are Not  Elligeble,You Can Vote")
+      // }
+
+      // let user = prompt("Do You Have Votter ID")
+      // let age = 18;
+      // let havvotercard = true;
+      // if (user == "yes") {
+      //     alert("You Are  Elligeble,You Can Vote")
+      //     document.getElementById("heading").innerHTML = "You Are  Elligeble,You Can Vote"
+
+      // }else if (user == "no") {
+      //     alert("You Are Not  Elligeble,You Can Vote")
+      // } else{
+      //     alert("Some Thing is Wrong")
+      // }
+
+      let age = prompt("Enter your Age");
+
+      if (age >= 18) {
+        let havvotercard = prompt("Do you have a voter card? (yes or no)");
+        if (havvotercard == "yes") {
+          alert("You are eligible, you can vote");
+        } else {
+          alert("You need a voter card to vote");
+        }
+      } else if (age < 18) {
+        alert("Your age is not valid for voting");
+      } else {
+        alert("Something is wrong");
+      }
+    </script>
+  </body>
+</html>

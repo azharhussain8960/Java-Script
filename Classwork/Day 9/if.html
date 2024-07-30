@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    <script>
+
+
+//   
+        // let number = +prompt("Please Enter A Number")
+    //     if (number%2 == 0) {
+    //         document.write(`The Number ${number} Is Even`);
+    //     }
+    //    document.write(`I Dont Know`);
+
+    //    if (number%2 != 0) {
+    //         document.write(`The Number ${number} Is Odd`);
+    //     }
+
+    // if (number%2 == 0) {
+    //     document.getElementById("heading").innerHTML = `The Number ${number} Is Even <br> In If block`
+    //      document.write(`the Number ${number} Is Even`)
+    // }else{
+    //     document.getElementById("heading").innerHTML = `The Number ${number} Is Odd <br> In Else block`
+        
+    // }
+
+    let a = +prompt("Enter First Number")
+    let b = +prompt("Enter Second Number")
+    let c = +prompt("Enter Third Number")
+
+    if (a>b && a>c) {
+        document.getElementById("heading").innerHTML =  ` a Is The Largest Number  Is ${a}` 
+        
+    } else if(b>a && b>c){
+        document.getElementById("heading").innerHTML = ` b Is The Largest Number  Is ${b}`
+
+    }else if(c>a && c>b){
+        document.getElementById("heading").innerHTML = ` c Is The Largest Number  Is ${c}`
+
+    }else{
+        document.getElementById("heading").innerHTML = `All Numbers Are Equal`
+    }
+
+    
+    </script>
+</body>
+</html>

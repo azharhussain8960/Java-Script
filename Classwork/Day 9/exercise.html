@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Enter The Number 0-9 Here And We Will Give The Spelling");
+        let spell = "";
+        // if (a == 0 ) {
+        //     document.write(`<h1>This Is Zero Number</h1>`)
+        // } else if (a == 1) {
+        //     document.write(`<h1>This Is One Number</h1>`)   
+        // } else if (a == 2) {
+        //     document.write(`<h1>This Is Two Number</h1>`)   
+        // } else if (a == 3) {
+        //     document.write(`<h1>This Is Three Number</h1>`)   
+        // } else if (a == 4) {
+        //     document.write(`<h1>This Is Four Number</h1>`)   
+        // } else if (a == 5) {
+        //     document.write(`<h1>This Is Five Number</h1>`)   
+        // } else if (a == 6) {
+        //     document.write(`<h1>This Is Six Number</h1>`)   
+        // } else if (a == 7) {
+        //     document.write(`<h1>This Is Seven Number</h1>`)   
+        // } else if (a == 8) {
+        //     document.write(`<h1>This Is Eight Number</h1>`)   
+        // } else if (a == 9) {
+        //     document.write(`<h1>This Is Nine Number</h1>`)   
+        // }else{
+        //     document.write(`<h1>Only Numbers Less Than 9</h1>`)
+        // }
+
+        switch (a) {
+            case 0:
+                spell = "Zero"
+                break;
+        
+            case 1:
+                spell = "One"
+                break;
+                
+                case 2:
+                spell = "Two"
+                break;
+
+                case 3:
+                spell = "Three"
+                break;
+
+                case 4:
+                spell = "Four"
+                break;
+                  
+                case 5:
+                spell = "Five"
+                break;
+
+                case 6:
+                spell = "Six"
+                break;
+
+                case 7:
+                spell = "Seven"
+                break;
+
+                case 8:
+                spell = "Eight"
+                break;
+
+                case 9:
+                spell = "Nine"
+                break;
+                default:
+                    spell = "Wrong Input"
+                
+        }
+            document.write(`<h1>The Spelling Of ${a} Is ${spell} </h1>`)   
+
+        
+    </script>
+</body>
+</html>

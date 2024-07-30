@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    <script>
+        let id  = "yes";
+        let vottercard = "no";
+        if (id == "yes" && vottercard == "no") {
+            alert("Hello Voter")
+            document.getElementById("heading").innerHTML = "You can Vote Azhar"
+        } else if (vottercard != "yes") {
+            document.getElementById("heading").innerHTML = "You Can Not Vote Now"
+            
+        }
+        else{
+            document.getElementById("heading").innerHTML = "Make Your Voter ID First Then Return You Fool"
+        }
+
+    </script>
+</body>
+</html>

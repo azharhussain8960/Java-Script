@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+        // Length Method And Sort Method 
+        let cars = ["Ferrari","Lombarghini","Buggati","GTR","Tesla","Maruti Suzuki","Ford","Fortuner","Marcedies","Wals Wagon","Audi","Jaguar","Indiever","Safari","Porche","Lexes","Thar","Strom","Pajero","Jeep","Tata","Innova"]
+        console.log(cars.length);// Returns the number of elements
+        console.log(cars); 
+        console.log(cars.sort()); // Sorts the array
+
+
+        //  Array.forEach()
+
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+                  let text = "<ul>";
+                  fruits.forEach(myFunction);
+                  text += "</ul>";
+                  
+                  function myFunction(value) {
+                    text += "<li>" + value + "</li>";
+                  }
+                  document.getElementById("demo").innerHTML = text;
+        
+    </script>
+</body>
+</html>

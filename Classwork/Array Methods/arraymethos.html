@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <script>
+        // Array Methods
+         
+        // 1. push()
+        let array1 =[1,2,3]
+           array1.push(4,5)  // Add Elements In Last Side Of Array
+           console.log(array1)
+
+           // 2. pop ()
+           let array2 =[1,2,3,4,5]
+           array2.pop()
+           array2.pop()  // removes Elemnts Frome The Last On By One
+           console.log(array2)  
+
+           // 3. sifht()
+           let array3 =[-1,0,1,2,3,4,5]
+           array3.shift()
+           array3.shift()// removes Elements From The First One By One
+           console.log(array3)  
+
+           // 4. unshift()
+           let array4 =[3,4,5]
+           array4.unshift(1,2) // Add Elements In First Side Of Array
+           console.log(array4);
+
+           // 5.concat()
+           let array5 =[1,2,3]
+           let array6 = [4,5,6]
+           let Arraysix = ["apple","mango","banana"]
+           let array7 = array5.concat(array6,Arraysix)  /// Merge Two Array And returns The New Array
+           console.log(array7);
+
+           // 6.slice()
+           let cars = ["Innova","Fortuner","Ford","Volve","BMW","Ferrari"]
+            let newcars=cars.slice(3)
+            console.log(newcars);
+
+           // 7.splice()
+           let fruits = ["apple","mango","banana","cherry","date","elderberry"]
+           fruits.splice(2,3,"azhar","musa")  // it removes the given values and add the given data
+           console.log(fruits);
+
+           // 8. sort()
+           let names = [ "Musa","Abdurahman","Azeem","Yaser","Saqeb","Skabdulrahman","Azhar"]
+           names.sort()
+           console.log(names);
+
+           // 9.reverse()
+           let names2 = [ "Musa","Abdurahman","Azeem","Yaser","Saqeb","Skabdulrahman","Azhar"]
+           names2.reverse()
+           console.log(names2);
+
+           //10.length()
+           let names3 =[ "Musa","Abdurahman","Azeem","Yaser","Saqeb","Skabdulrahman","Azhar"]
+           console.log(names3.length);
+
+               // destructuring Of array
+
+               let names4 = ["Musa","Abdurahman","Azeem","Yaser","Azhar"]
+            //    let name1 = "musa"
+            //    let name2 = "abdurahman"
+            //    let name3 = "azeem"              // Old Methods For Destructuring
+            //    let name4 = "yaser"
+            //    let name5 = "azhar"
+               
+               let [name1,name2,name3,name4,name5] = names4
+               console.log(name1,name2,name3,name4,name5);    // New Method For Destructuring
+    </script>
+</body>
+</html>
