@@ -1,0 +1,21 @@
+body{
+    background-color:rgb(134, 188, 27);
+
+}
+.maibody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.cont{
+    background-color:yellowgreen ;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+span{
+    color: red;
+}

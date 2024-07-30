@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Arithmetic</h1>
+    <script>
+      //JavaScript Arithmetic
+
+      // Operator	Description
+      // +	Addition
+      // -	Subtraction
+      // *	Multiplication
+      // **	Exponentiation (ES2016)
+      // /	Division
+      // %	Modulus (Remainder)
+      // ++	Increment
+      // --	Decrement
+
+      // Arithmetic Operations
+      //Adding
+
+      let a = 10 + 10;
+      let b = "a" + "b";
+      let c = (10 + 10) * a;
+      console.log(a);
+      console.log(b);
+      console.log(c);
+
+      //Subtracting
+      let d = 10;
+      let e = 1;
+      let f = d - e;
+      console.log(f);
+
+      //Multiplying
+      let g = 10;
+      let h = 10;
+      let i = g * h;
+      console.log(i);
+
+      //Dividing
+      let j = 10;
+      let k = 2;
+      let l = j / k;
+      console.log(l);
+
+      //Remainder
+      let m = 10;
+      let n = 3;
+      let o = m % n;
+      console.log(o);
+
+      //Incrementing
+      let p = 10;
+      p++;
+      let q = p;
+      console.log(q);
+
+      //Decrementing
+      let r = 10;
+      r--;
+      let s = r;
+      console.log(s);
+
+      //Exponentiation
+      let t = 2;
+      let u = t ** 2;
+      console.log(u);
+      //x ** y produces the same result as Math.pow(x,y):
+      let v = Math.pow(t, 2);
+      console.log(v);
+
+      //Operator Precedence
+      //Operator precedence describes the order in which operations are performed in an arithmetic expression.
+      let w = 1 + 5 * 3;         // Multiplay first And Then Addition
+      let w2  =1 + 5 * 3 - 4;    //1st Multiplication, 2nd Substraction , 3rd Addition
+      let w3 = 100/50 *3;        //1st Division , 2nd Multiplication
+      console.log(w);
+      console.log(w2);
+      console.log(w3); 
+
+    </script>
+  </body>
+</html>

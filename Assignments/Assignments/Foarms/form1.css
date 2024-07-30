@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+background-color:rgb(210, 227, 229) ;
+
+}
+.main{
+width: 50vw;
+height: auto;
+
+}
+
+label{
+    color: rgb(5, 59, 130);
+}
+.common{
+    color: red;
+    border: 2px solid rgb(0, 110, 255);
+}
+
+.radio_button_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+tr{
+    font-size: 20px;
+    margin-top: 10px;
+}
+label,input{
+    margin-left: 10px;
+}
+input{
+    font-size: 18px;
+}
+.Search_button{
+    display: flex;
+    text-align: center;
+    
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+button{
+    padding:3px  39px;
+    background-color:rgb(231, 99, 51);
+    color:rgb(0, 110, 255);
+    margin-left: 45px;
+}
+table{
+    margin-top: 10px;
+}
