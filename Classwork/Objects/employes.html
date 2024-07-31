@@ -43,7 +43,10 @@
          this.id=id;
          this.name=name;
          this.age=age;
-         this.salery=salery
+         this.salery=salery;
+         this.display=function(){
+            console.log(`Working As an Entern`);
+         }
         }
         let emp1 =new employes(1,"Azhar Hussain",24,50000)
         let emp2 =new employes(2,"sk Musa",24,50000)
@@ -55,6 +58,27 @@
         console.log(emp3);
         console.log(emp4);
         console.log(emp5);
+        emp1.display()
+
+        let user={
+            name:"azhar",
+            age:24,
+            "Like Animales":true
+        }
+
+        console.log("age" in user);   // for searchin If the given key prsent in object or not
+        console.log("sss" in user);
+        let flag ="age" in user;
+        console.log(flag);
+        console.log(user["name"]);
+        console.log(user.age);
+        console.log(user["Like Animales"]);  // we have to call dobule codes keys with [] notation
+  
+
+        // for in method
+        for (key in user){
+            console.log(user[key]);
+        }
     </script>
 </body>
 </html>
