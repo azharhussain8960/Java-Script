@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        background-color: black;
+      }
+
+      #card {
+        width: 500px;
+        height: 460px;
+        background-color: black;
+        box-shadow: 0 0 5px black;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0px 0px 80px purple;
+      }
+
+      #imag {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 50px;
+        position: absolute;
+        top: 30px;
+        left: 46%;
+        z-index: 11;
+        box-shadow: 0px 0px 15px purple;
+      }
+      #imag img {
+        width: 100%;
+        height: auto;
+        /* display: block; */
+      }
+
+      #content {
+        padding: 60px;
+      }
+
+      #content h2 {
+        margin: 10px 0;
+        color: wheat;
+        text-shadow: 0px 0px 3px white;
+      }
+
+      #content p {
+        color: white;
+        /* text-shadow: 1px 1px 0px purple; */
+      }
+    </style>
+  </head>
+  <body>
+    <img src="" alt="">
+    <div id="card">
+      <img id="imag" src="https://i.pinimg.com/564x/da/8c/21/da8c2163061be58d770f6f9af78258e8.jpg" alt="" />
+      
+      <div id="content">
+        <h2 id="heading">
+          <!-- Azhar Hussain -->
+        </h2>
+        <p id="ptag">Web Developer</p>
+        <p id="ptag2">
+          <!-- Azhar is a passionate web developer with over 5 years of experience in
+             creating dynamic and user-friendly websites. He is proficient in
+             HTML, CSS, JavaScript, and various modern web frameworks. Azhar loves
+             to solve problems and continuously improve his skills. -->
+        </p>
+        <p id="ptag3"></p>
+        <p id="ptag4"></p>
+        <p id="ptag5"></p>
+        <p id="ptag6"></p>
+        <p id="ptag7"></p>
+        <p id="ptag8"></p>
+      </div>
+    </div>
+    <script>
+
+        // Using This Key Word
+      let a = +prompt("Please Enter Your Employe ID Here");
+     let boys2 = function(name,position,company,experience,salary,contact,location,description,imagee){
+        this.name = name;
+        this.position = position;
+        this.company = company;
+        this.experience = experience;
+        this.salary = salary;
+        this.contact = contact;
+        this.location = location;
+        this.description = description;
+        this.imagee = imagee;
+     }
+     let one = new boys2("Shaikh azeem","Front-End Developer","Tekisky Pvt. Ltd.","5 Years",50000,"+918623038879","Nanded","Azeem is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Azeem loves to solve problems and continuously improve his skills.","../Assignments/Boys/images/Screenshot 2024-07-30 221703.png");
+     let two = new boys2("Mohammed yaser","Front-End Developer","Tekisky Pvt. Ltd.","7 Years",60000,"+91 70587 33358","Mumbai","Yaser is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Yaser loves to solve problems and continuously improve his skills.","https://img.freepik.com/premium-photo/cartoon-character-young-boy_1057389-25145.jpg?w=360");
+     let three = new boys2("Mohammed Musa","Front-End Developer","Tekisky Pvt. Ltd.","9 Years",90000,"+91 78228 96448","Pune","Musa is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Musa loves to solve problems and continuously improve his skills.","https://img.freepik.com/premium-photo/cartoon-character-with-glasses-jacket-that-says-i-m-boy_771335-49732.jpg");
+     let four = new boys2("Azhar Hussain","(MERN)Fullstack Developer","Tekisky Pvt. Ltd.","9 Years",90000,"+91 7972 078960","Nanded","Azhar is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Azhar loves to solve problems and continuously improve his skills.","../Assignments/Boys/images/AHNGHB.png");
+     let five = new boys2("Abdul Rahman Khan","Front-End Developer","Tekisky Pvt. Ltd.","6 Years",70000,"+91 93738 41055","Pune","Rahman is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Rahman loves to solve problems and continuously improve his skills.","../Assignments/Boys/images/Screenshot 2024-07-30 224255.png");
+     let six = new boys2("Shaikh Abdul Rahman","Front-End Developer","Tekisky Pvt. Ltd.","5 Years",50000,"+91 70835 27090","Hydrabad","Rahman is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Rahman loves to solve problems and continuously improve his skills.","https://img.freepik.com/premium-photo/cartoon-character-young-boy_1057389-25133.jpg");
+     let seven = new boys2("Mohammed Saqeb","Front-End Developer","Tekisky Pvt. Ltd.","5 Years",50000,"+91 87671 45614","Delhi","Saqeb is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Saqeb loves to solve problems and continuously improve his skills.","https://img.freepik.com/premium-photo/cartoon-character-young-boy_1057389-25123.jpg");
+     let eight = new boys2("Mohammed Nomanuddin","Front-End Developer","Tekisky Pvt. Ltd.","7 Years",70000,"+91 84216 81464","Aurangabad","Noman is a passionate web developer with over 5 years of experience in creating dynamic and user-friendly websites. He is proficient in HTML, CSS, JavaScript, and various modern web frameworks. Noman loves to solve problems and continuously improve his skills.","../Assignments/Boys/images/noman2024-07-30 225816.png");
+
+     switch (a) {
+        case 1501:
+        document.getElementById("heading").innerHTML = one.name;
+      document.getElementById("ptag").innerHTML = one.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${one.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${one.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${one.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${one.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${one.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${one.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${one.description}`;
+      document.getElementById("imag").src = one.imagee; 
+            break;
+            case 1502:
+      document.getElementById("heading").innerHTML = two.name;
+      document.getElementById("ptag").innerHTML = two.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${two.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${two.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${two.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${two.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${two.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${two.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${two.description}`;
+      document.getElementById("imag").src = two.imagee; 
+            break;       
+            case 1503:
+        document.getElementById("heading").innerHTML = three.name;
+      document.getElementById("ptag").innerHTML = three.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${three.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${three.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${three.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${three.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${three.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${three.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${three.description}`;
+      document.getElementById("imag").src = three.imagee; 
+            break;
+            case 1504:
+        document.getElementById("heading").innerHTML = four.name;
+      document.getElementById("ptag").innerHTML = four.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${four.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${four.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${four.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${four.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${four.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${four.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${four.description}`;
+      document.getElementById("imag").src = four.imagee; 
+            break;       
+            case 1505:
+        document.getElementById("heading").innerHTML = five.name;
+      document.getElementById("ptag").innerHTML = five.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${five.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${five.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${five.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${five.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${five.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${five.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${five.description}`;
+      document.getElementById("imag").src = five.imagee; 
+            break;            
+     
+            case 1506:
+        document.getElementById("heading").innerHTML = six.name;
+      document.getElementById("ptag").innerHTML = six.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${six.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${six.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${six.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${six.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${six.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${six.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${six.description}`;
+      document.getElementById("imag").src = six.imagee; 
+            break; 
+            case 1507:
+        document.getElementById("heading").innerHTML = seven.name;
+      document.getElementById("ptag").innerHTML = seven.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${seven.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${seven.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${seven.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${seven.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${seven.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${seven.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${seven.description}`;
+      document.getElementById("imag").src = seven.imagee; 
+            break; 
+            case 1517:
+        document.getElementById("heading").innerHTML =eight.name;
+      document.getElementById("ptag").innerHTML = eight.position;
+      document.getElementById("ptag2").innerHTML = `Position : ${eight.position}`;
+      document.getElementById("ptag3").innerHTML = `Company Name : ${eight.company}`;
+      document.getElementById("ptag4").innerHTML = `Experience :  ${eight.experience} As a Devloper`;
+      document.getElementById("ptag5").innerHTML = `Job Salery :  ${eight.salary}$`;
+      document.getElementById("ptag6").innerHTML = `Contact No :  ${eight.contact}`;
+      document.getElementById("ptag7").innerHTML = `Location : Lives In ${eight.location}`;
+      document.getElementById("ptag8").innerHTML = `Description :  ${eight.description}`;
+      document.getElementById("imag").src = eight.imagee; 
+            break;    
+        default:
+            document.getElementById("heading").innerHTML = "Invalid Employee ID";
+            break;
+     }
+       </script>
+  </body>
+</html>
