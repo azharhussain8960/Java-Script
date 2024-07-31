@@ -1,6 +1,8 @@
 let a = +prompt("Please Enter Your Employe ID Here");
 
 let boys = {
+
+  
   one: {
     employeId: 1501,
     Name: "Shaikh Azeem",
@@ -100,7 +102,7 @@ let boys = {
       "https://img.freepik.com/premium-photo/cartoon-character-young-boy_1057389-25123.jpg",
   },
   eight: {
-    employeId: 1508,
+    employeId: 1517,
     Name: "Mohammed Noman",
     location: "Aurangabad",
     position: "Front-End Developer",
@@ -202,7 +204,7 @@ function job(a) {
                     document.getElementById("ptag8").innerHTML = `Description :  ${boys.seven.description}`;
                     document.getElementById("imag").src = boys.seven.imagee;
                     break;
-                    case 1508:
+                    case 1517:
                         document.getElementById("heading").innerHTML = boys.eight.Name;
                         document.getElementById("ptag").innerHTML = boys.eight.position;
                         document.getElementById("ptag2").innerHTML = `Position : ${boys.eight.position}`;
