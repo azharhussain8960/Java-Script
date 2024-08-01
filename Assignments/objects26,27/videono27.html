@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let persion ={
+            firstName : "Azhar",
+            lastName : "Hussain",
+            sayBye : function(){  // We Can Make The Function In The Object Directly
+                  console.log(`Bye ${persion.firstName} ${persion.lastName}`);
+            },
+            greeting (){
+               console.log(`Good Morning ${persion.firstName} ${persion.lastName}`)
+            }
+        }
+        persion.age = 24
+        persion.sayHello = function(){    // Through The Annonomas Function
+            console.log(`Hello ${persion.firstName} ${persion.lastName}`);
+        }
+        persion.sayHello()
+        persion.sayBye()
+        persion.greeting()
+
+    </script>
+</body>
+</html>
