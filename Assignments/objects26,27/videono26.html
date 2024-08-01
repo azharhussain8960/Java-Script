@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Objects In Javascript</h1>
+    <script>
+      // Objects
+
+      let person = {
+        firstName: "Azhar",
+        lastName: "Hussain",
+      };
+
+      person.firstName = "Shaikh"; // Reassigning Of Variable
+      person.age = 24; // Adding New Key & Value In The Object
+      //delete person.firstName         deleting the firstName From Object
+
+      console.log(
+        `My Name Is ${person.firstName} ${person.lastName} And I Am ${person.age} Years Old`);
+        console.log(person["firstName"]);     // Bracket Notaition
+        console.log("height" in person);      //Checking The Height Present In The Person Object Or Not,It Returns The True And False Value.
+        console.log('age' in person);
+
+        for(key in person){
+            console.log(key);          //  It Shows The Hole Keys From The Objects
+             console.log(person[key]);   // Its For The Vlues From TheObjects
+             console.log(`${key} : ${person[key]}`);
+        }
+    </script>
+  </body>
+</html>
