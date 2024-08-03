@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="he">hello</h1>
+      <input type="text" placeholder="Give Any Color" id="inpt" />
+      <button id="btn">Click Me</button>
+      <p id="ptag"></p>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+                document.getElementById("ptag").innerHTML = inpt.value
+                document.body.style.backgroundColor = inpt.value;
+        })
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
