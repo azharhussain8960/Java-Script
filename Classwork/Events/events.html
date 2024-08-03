@@ -7,15 +7,32 @@
 </head>
 <body>
 
-    <h1 id="heading1" onmouseover= "pro(this)">hello</h1>
-    <h2 id="heading2">hi</h2>
+    <h1 style="display: inline;" id="heading1" onmouseout="(pro3(this))" onmouseover= "pro(this)">hello</h1>
+    <h2 id="heading2" onmouseout="pro2(this)">hi</h2>
     <button onclick="alert('button preesd')">press</button>
+    <button id="btn2">press</button>
     <script>
      function pro(obj){
         let neww =  document.getElementById("heading1");
     //    neww.innerHTML = "how are you"
               obj.innerHTML = "how are you"
      }
+
+     function pro2(obj2){
+        obj2.innerHTML = "Bye"
+     }
+     function pro3(obj3){
+        let neww =  document.getElementById("heading1");
+
+           obj3.innerHTML  = "hello"
+     }
+
+     let btn2 = document.getElementById("btn2")
+     let neww =  document.getElementById("heading1");
+     function funn1(){
+         neww.innerHTML = "who are you"
+     }
+     btn2.addEventListener("click", funn1)
     </script>
 </body>
 </html>
