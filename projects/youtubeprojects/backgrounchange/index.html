@@ -59,7 +59,7 @@
        <span class="btn" id="voilet" onclick="press('violet')"></span>
       <span class="btn" id="black" onclick="press('black')"></span>
     </div>
-    <h1 class="txt">About Us</h1>
+    <h1 class="txt" id="stick">About Us</h1>
     <img
       src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg"
       alt=""
@@ -121,11 +121,18 @@
     </p>
 
     <script>
+        let sticky = document.getElementById("stick")
         let white = document.getElementById("white")
         let aqua = document.getElementById("aqua")
         let voilet = document.getElementById("violet")
         let black = document.getElementById("black")
         let text = document.getElementsByClassName("txt")
+
+        sticky.style.position = "stick 80px 50%"
+        // sticky.style.top = "80px"
+        // sticky.style.left = "50%"
+
+
 
           function press(col){
             document.body.style.backgroundColor = col
