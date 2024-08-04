@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="slide-container">
+        <div class="slide">
+            <img width="100%" height="400px" src="./images/1awesome-tree-day-and-night-zmtu5b1d7p2k99a1.webp" alt="">
+            <div class="caption">Caption Text 1</div>
+        </div>
+        <div class="slide">
+            <img width="100%" height="400px" src="./images/images.jpeg" alt="">
+            <div class="caption">Caption Text 2</div>
+        </div>
+        <div class="slide">
+            <img width="100%" height="400px" src="./images/pexels-photo-552788.jpeg" alt="">
+            <div class="caption">Caption Text 3</div>
+        </div>
+        <div class="slide">
+            <img width="100%" height="400px" src="./images/photo-1517487998869-0e946c62b04e.jpeg" alt="">
+            <div class="caption">Caption Text 4</div>
+        </div>
+    </div>
+
+    <span onclick="controlSlide(-1)" class="arrow prev">&#10094;</span>
+    <span onclick="controlSlide(1)" class="arrow next">&#10095;</span>
+
+    <script src="./script.js"></script>
 </body>
 </html>
