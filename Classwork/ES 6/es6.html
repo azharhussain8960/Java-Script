@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(x=2,y=3,z=x+y){
+            let a = x+y+z
+            console.log(a);
+            
+        }
+        // add(10,20)
+        // add(undefined,10)
+        // add()
+
+        function addd(...x){
+            // console.log(x);
+            
+          let result = 0
+          for(val of x){
+            result = result + val 
+          console.log(result);         
+          }
+        }
+        addd(10)
+        addd(10,20)
+        addd(10,20,30)
+        addd(10,20,30,40)
+        addd(10,20,30,40,50)
+        addd(10,20,30,40,50,60)
+        addd(10,20,30,40,50,60,70)
+        addd(10,20,30,40,50,60,70,80)
+        addd(10,20,30,40,50,60,70,80,90)
+        addd(10,20,30,40,50,60,70,80,90,100)
+
+
+        let msg = `
+        
+        My Name Is Azhar Hussin 
+        
+        `
+        console.log(msg.startsWith("m"));
+        console.log(msg.endsWith("n"));
+        console.log(msg.includes("Azhar"));
+        console.log(msg.repeat(3));
+        
+    </script>
+</body>
+</html>
