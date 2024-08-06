@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <!--  Example 4: multiple parameter and how to call function -->
+    <script>
+      function createDiv(
+        height = "100px",
+        width = "100px",
+        border = "solid 1px red"
+      ) {
+        let div = document.createElement("div"); //The createElement() method creates an Element Node with the specified name
+        div.style.height = height;
+        div.style.width = width;
+        div.style.border = border;
+        document.body.appendChild(div);
+        return div;
+      }
+      createDiv();
+      createDiv(undefined, undefined, "solid 5px blue");
+    </script>
+  </body>
+</html>

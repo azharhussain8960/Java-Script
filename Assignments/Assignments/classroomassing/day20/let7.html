@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Redeclaring variable in different blocks -->
+     
+    <script>
+      let num = 23;
+      {
+        let num = 15;
+
+        document.write("num inside the function = " + num);
+      } //let num = 89; //uncoment this to check error
+      document.write("<br> num outside the function = " + num);
+    </script>
+  </body>
+</html>

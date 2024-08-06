@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function add(x = 1, y = x, z = x + y) {
+        return x + y + z;
+      }
+      console.log(add()); // 4
+    </script>
+    
+    <!-- Explanation:
+        In the add() function:
+        The default value of the y is set to x parameter.
+        The default value of the z is the sum of x and y
+        The add() function returns the sum of x, y, and z. -->
+  </body>
+</html>

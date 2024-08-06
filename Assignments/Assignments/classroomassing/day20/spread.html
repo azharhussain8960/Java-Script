@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let arr=[10,20,30]
+        let x=[40,50,60]
+        let z= [60, 70,arr[0],arr[1],arr[2]]  // instead of writing every element one by one use spread operator to call that array
+        let a=[60,70,...arr,...x]   // (...) -> spread operator
+        console.log(arr);
+        console.log(z);
+        console.log(a);
+        console.log(...a) // array me se values nikal kr dega
+
+        
+    </script>
+</body>
+</html>

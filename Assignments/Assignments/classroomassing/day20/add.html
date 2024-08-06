@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//2 rest paramneter allow you to pass n number of arguments
+
+        add=(...x)=>   //takes n no of arguments
+    {
+      console.log(x);  //array
+       let result=0;
+       for (val of x)
+       {
+        result=result+val;
+       
+        
+       }  
+       console.log(result);  
+       
+    }
+    add(5,7);
+//3
+    // add=(a,b,c)=>
+    // {
+    //     z=a+b+c;
+    //     return z;
+    //     document.write(z);
+    // }
+    add(5,7,7);
+// 4
+    // add=(a,b,c,d)=>
+    // {
+    //     z=a+b+c+d;
+    //     return z;
+    //     document.write(z);
+    // }
+    add(5,7,7,6);
+  function sub(x)          //takes only 1 argument
+  {
+    console.log(x);
+  }
+
+    </script>
+</body>
+</html>

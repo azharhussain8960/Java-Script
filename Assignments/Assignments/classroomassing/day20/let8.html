@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- How let is different from the var keyword? -->
+    <script>
+      function checkGlobalScope() {
+        // x is declared yet so not available here
+        document.write("Value of x before the block: " + x);
+        {
+          var x = 20;
+          xx = x + 8;
+        } // x is still known here and has a value.
+        document.write("<br> Value of x after the block: " + x);
+      } //x is declared inside the function, so not available here
+      checkGlobalScope();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Example 5:   -->
+    <script>
+      function date(d = today()) {
+        console.log(d);
+      }
+      function today() {
+        return new Date().toLocaleDateString("en-US");
+      }
+      date();
+    </script>
+    <!-- Explanation
+    The date() function takes one parameter whose default value is the returned value
+    of the today() function. The today() function returns today’s date in a specified
+    string format.
+    When we declared the date() function, the today() function has not yet evaluated
+    until we called the date() function. -->
+  </body>
+</html>
