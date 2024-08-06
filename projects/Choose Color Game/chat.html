@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        text-shadow: 1px 2px 3px black;
+      }
+      input {
+        width: 300px;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        border: 2px solid black;
+        box-shadow: 1px 1px 3px black;
+      }
+      button {
+        width: 150px;
+        padding: 10px;
+        margin-top: 20px;
+        font-weight: bolder;
+        font-size: 20px;
+        border: 2px solid black;
+        box-shadow: 1px 1px 3px black;
+      }
+      #stopwatch {
+        margin-top: 20px;
+      }
+      span{
+        font-size: 40px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="he" id="hee">Which Background Color Do You Want</h1>
+      <input type="text" placeholder="Give Any Color" id="inpt" />
+      <button id="btn">Click Me</button>
+      <p id="stopwatch"><span id="hr">00</span>:<span id="min">00</span>:<span id="sec">00</span></p>
+      <button id="startStopBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <script>
+      let btn = document.getElementById("btn");
+      let heading = document.getElementById("hee");
+      let inpt = document.getElementById("inpt");
+
+      btn.addEventListener("click", function() {
+        document.body.style.backgroundColor = inpt.value;
+        if (inpt.value.toLowerCase() == "black") {
+          heading.style.color = "white";
+        } else {
+          heading.style.color = "black";
+        }
+        inpt.value = "";
+      });
+
+      // Stopwatch functionality
+      let hr = 0;
+      let min = 0;
+      let sec = 0;
+      let timer;
+      let isRunning = false;
+
+      function updateStopwatch() {
+        sec++;
+        if (sec === 60) {
+          sec = 0;
+          min++;
+          if (min === 60) {
+            min = 0;
+            hr++;
+          }
+        }
+        document.getElementById("hr").textContent = String(hr).padStart(2, '0');
+        document.getElementById("min").textContent = String(min).padStart(2, '0');
+        document.getElementById("sec").textContent = String(sec).padStart(2, '0');
+      }
+
+      btn   .addEventListener("click", function() {
+        if (isRunning) {
+          clearInterval(timer);
+        timer = setInterval(updateStopwatch, 1000);
+
+          this.textContent = "Start";
+        } else {
+          timer = setInterval(updateStopwatch, 1000);
+        //   clearInterval(timer);
+
+          this.textContent = "Stop";
+        }
+        isRunning = !isRunning;
+      });
+
+      document.getElementById("resetBtn").addEventListener("click", function() {
+        clearInterval(timer);
+        isRunning = false;
+        document.getElementById("startStopBtn").textContent = "Start";
+        hr = 0;
+        min = 0;
+        sec = 0;
+        document.getElementById("hr").textContent = "00";
+        document.getElementById("min").textContent = "00";
+        document.getElementById("sec").textContent = "00";
+      });
+    </script>
+  </body>
+</html>

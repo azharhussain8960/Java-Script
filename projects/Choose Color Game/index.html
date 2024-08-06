@@ -5,20 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      body{
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1{
+        font-size: 40px;
+        font-weight: bolder;
+        text-shadow: 1px 2px 3px black;
+      }
+      input{
+        width: 300px;
+        padding: 15px;
+         text-align: center;
+         font-weight: bolder;
+         font-size: 20px;
+         border: 2px solid black;
+         box-shadow:1px 1px 3px black;
+      }
+      button{
+        width: 150px;
+        padding: 10px;
+        margin-top: 20px;
+        font-weight: bolder;
+         font-size: 20px;
+         border: 2px solid black;
+         box-shadow:1px 1px 3px black;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-        <h1 class="he">hello</h1>
+        <h1 class="he" id="hee">Which Background Color Do You Want</h1>
       <input type="text" placeholder="Give Any Color" id="inpt" />
       <button id="btn">Click Me</button>
-      <p id="ptag"></p>
+      <p id="ptag"><span id="hr">00</span>:<span id="min">00</span></p>
     </div>
-
     <script>
-        document.getElementById("btn").addEventListener("click", function(){
-                document.getElementById("ptag").innerHTML = inpt.value
-                document.body.style.backgroundColor = inpt.value;
+
+        let btn = document.getElementById("btn")
+        let heading = document.getElementById("hee")
+        let ptag = document.getElementById("ptag")
+
+
+        let colors = ["red","blue","pink"]
+        let hr = 0
+        let min = 0
+       btn.addEventListener("click", function(){
+           let boddy= document.body.style.backgroundColor = colors[randomclr];  
+         if(inpt.value == colors[randomclr]){
+          console.log();
+         inpt.value = " "; 
+               heading.style.color = "white"
+               ptag.innerHTML =   "You Won"
+         }
+
+        //  setTimeout(() => {
+        //   hr= hr+1
+        //       document.getElementById("hr").innerHTML = hr
+        //  }, 10);
+
         })
+
+        function chooseclr(){
+          return Math.round(Math.random()*colors.length)
+
+        }
+        let randomclr = chooseclr()
+        // console.log(colors[randomclr]);
+        
+          
+
+        
+
+
+
+       
     </script>
     <script src="./index.js"></script>
   </body>
