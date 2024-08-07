@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:purple;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .continer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .seccontainer{
+            width: 600px;
+            height: 400px;
+            background-color: rgba(213, 206, 206, 0.214);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .leftdiv{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            margin-right: 30px;
+        }
+        .rightdiv{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        input{
+            width: 250px;
+            height:30px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button{
+            width: 150px;
+            height:40px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <h1>Choose color</h1>
+
+        <div class="seccontainer">
+        <div class="leftdiv">
+            <h1>Pleyr 1</h1>
+            <input type="text" placeholder="Enter Color"   id="inp1">
+            <!-- <button>Click</button> -->
+        </div>
+        <div class="rightdiv">
+            <h1>Pleyr 2</h1>
+            <input type="text" placeholder="Enter Color"   id="inp2">
+        </div>
+
+    </div>
+    <button>Click</button>
+    
+    </div>
+</body>
+</html>
