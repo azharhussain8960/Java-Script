@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Promisses In java script</h1>
+
+    <script>
+        let p =new Promise ((resolved,reject)=>{
+            let doneDinner = true
+            if(doneDinner == true){
+           resolved()
+            }else{
+                reject()
+            }
+        })
+        p.then(()=>{
+            console.log("Done Dinner And Had Tea");
+        }).catch(()=>{
+            console.log("Ate Dal Chawal At Home");
+            
+        }).finally(()=>{
+            console.log("Afterall I Am Happy");
+        })
+    </script>
 </body>
 </html>
