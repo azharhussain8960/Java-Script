@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Java script Modules</h1>
+     <h2>js classes</h2>
+     <script>
+        // Arrow function Syntax
+        const add = (a, b) => {
+            console.log(a + b);   
+        }
+
+        const addd=(a,b,c)=>a+b+c
+        add(2,2)
+        let adition = addd(3,4,5)
+        console.log(adition);
+        
+        // classes
+
+
+
+        class car{
+            constructor(company,model,color,price){
+                this.company=company
+                this.model = model
+                this.price = price
+                this.color = color
+            }
+
+        }
+        let c1 = new car("Tata","indica","White",400000)
+        let c2 = new car("Maruti","800x","White",200000)
+        let c3 = new car("Innova","Crista","Gray",2500000)
+        console.log(c1);
+        console.log(c2);
+        console.log(c3);
+        
+     </script>
+</body>
+</html>

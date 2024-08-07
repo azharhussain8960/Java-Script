@@ -120,7 +120,18 @@
                 console.log(h1t);
                 input1.value =""
                 
-               }               
+               }else if(bclr == input2.value){
+                h2t.innerHTML =  "Plyer 2: Won"
+                h2t.style.color = "white"
+                ptag2.style.color = "white"
+                ptag2.innerHTML = `Points: ${i+5}`
+
+                h1t.innerHTML =  "Plyer 2: Loose"
+                h1t.style.color = "Black"
+                ptag1.style.color = "Black"
+                console.log(h1t);
+                input2.value =""
+               }
         })
 
         
