@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color:purple;
+            background-color:rgb(130, 105, 105);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .continer{
@@ -18,7 +18,7 @@
         .seccontainer{
             width: 600px;
             height: 400px;
-            background-color: rgba(213, 206, 206, 0.214);
+            background-color: rgba(149, 146, 146, 0.403);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,8 +51,16 @@
             font-size: 20px;
             font-weight: bold;
             margin-top: 20px;
+            cursor: pointer;
         }
-        
+        h1{
+            font-weight: bold;
+            text-shadow: 1px 1px 3px black;
+        }
+        p{
+            font-size: 25px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -61,18 +69,67 @@
 
         <div class="seccontainer">
         <div class="leftdiv">
-            <h1>Pleyr 1</h1>
+            <h1 id="heading1">Pleyr 1</h1>
             <input type="text" placeholder="Enter Color"   id="inp1">
+            <p id="ptag1">Points:0</p>
             <!-- <button>Click</button> -->
         </div>
         <div class="rightdiv">
-            <h1>Pleyr 2</h1>
+            <h1 id="heading2">Pleyr 2</h1>
             <input type="text" placeholder="Enter Color"   id="inp2">
+            <p id="ptag2">Points:0</p>
+
         </div>
 
     </div>
-    <button>Click</button>
+    <button id="btn">Click</button>
     
     </div>
+
+    <script>
+        let input1 = document.getElementById("inp1")
+        let input2 = document.getElementById("inp2")
+        let btn = document.getElementById("btn")
+        let h1t = document.getElementById("heading1")
+        let h2t = document.getElementById("heading2")
+        let ptag1 = document.getElementById("ptag1")
+        let ptag2 = document.getElementById("ptag2")
+
+        let colors = ["red","blue","green","purple","pink","skyblue"]
+         let i =0;
+        btn.addEventListener("mouseover",function(){
+            
+            h1t.style.color = input1.value
+            ptag1.style.color = input1.value
+
+            h2t.style.color = input2.value
+            ptag2.style.color = input2.value
+        })
+         
+        btn.addEventListener("click",function(){
+              let bclr =  document.body.style.backgroundColor = colors[ranclr]
+               if (bclr == input1.value){
+                h1t.innerHTML =  "Plyer 1: Won"
+                h1t.style.color = "white"
+                ptag1.style.color = "white"
+                ptag1.innerHTML = `Points: ${i+5}`
+
+                h2t.innerHTML =  "Plyer 2: Loose"
+                h2t.style.color = "Black"
+                ptag2.style.color = "Black"
+                console.log(h1t);
+                input1.value =""
+                
+               }               
+        })
+
+        
+        function getclr(){
+          return  Math.round(Math.random()*colors.length)
+        }
+        let ranclr = getclr()
+         console.log(colors[ranclr]);
+        
+    </script>
 </body>
 </html>
