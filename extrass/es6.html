@@ -149,9 +149,7 @@ for (const key in person) {
   
   
 }
-for(let idx of person){
-  console.log(idx);
-}
+
 // Output: 
 // name: Alice
 // age: 25
@@ -172,7 +170,21 @@ for (const index in arr) {
 // 2
 // 30
 
-        
+        // let mutime = setTimeout(()=>{
+        //   let i=0
+        //   i = i++
+        //   console.log(i);
+          
+        // },2000)
+
+        let i = 0; // Declare i outside of the function
+
+let mutime = setInterval(() => {
+  console.log(i++);
+}, 1000); // Log and increment i every second (1000 ms)
+setTimeout(()=>{
+  clearInterval(mutime);
+},5000)
        </script>
 </body>
 </html>

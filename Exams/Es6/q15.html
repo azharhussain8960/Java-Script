@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q15 Explain promise with example</h1>
+
+    <script>
+    // Promise
+
+    let work = new Promise((resolve,reject)=>{
+        let workDone = true
+        if(workDone == true ){
+            resolve("Work Done")
+            }
+            else{
+                reject("Work Not Done")
+                }
+    })
+    work.then((message)=>{
+        console.log(message)}).catch(()=>{
+            console.log("Error")
+        }).finally(()=>{
+            console.log("Finally I Am HAppy")
+        })
+
+        
+    </script>
+</body>
+</html>
