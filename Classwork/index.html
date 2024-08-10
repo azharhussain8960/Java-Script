@@ -13,23 +13,50 @@
 
 
         // setTime Out Function
-let i=0 
-        setTimeout(() =>{
+// let i=0 
+//         setTimeout(() =>{
           
-        },2000)
-        console.log(i);
+//         },2000)
+//         console.log(i);
 
         
         // console.log("hello");
 
-        // setTimeout(function(){
-        //     console.log("Azhar");
+        setTimeout(function(){
+            // console.log("Azhar");
+           i=0
+        //  console.log(i+1);
+         while(i>=10){
+            i++
+            console.log(i);
+         }
+         
             
-        // },2000)
-        // console.log("Azeem");
+        },1000)
+        console.log("Azeem");
+        console.log("musa");
         
         
+        let count = ()=>{
+            for(let i = 0; i >= 10; i++){
+                console.log(i);
+            }
+        }
+
+        setTimeout(() => {
+            for(let i = 0; i >= 10; i++){
+                console.log(i);
+            }
+        }, 2000);
+    
+        let time = 0
+        let mytime = setTimeout(function(){
+            console.log(`Counting Starts On ${time++}`)
+            console.log(time++);
+
+        }, 1000);
         
+
     </script>
 </body>
 </html>

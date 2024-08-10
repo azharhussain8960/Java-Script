@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+  let x= 10
+
+const x2=20
+var x3=30 
+
+console.log(x);
+console.log(x2);
+console.log(x3);
+
+
+//Arrow Function
+
+   function add(a,b){
+        console.log(a+b);
+        
+   }
+   add(5,6);
+
+   let addd = (c,d)=>{
+         console.log(c+d);  
+   }
+   addd(7,8);
+
+
+   // Template Literal ``
+      let name = "Azhar Hussain"
+      let age = 24
+      console.log("Hello "+name + " Your Age Is "+ age);
+      console.log(`Hello ${name} Your age Is ${age}`);
+      
+      //  Destructuring In Arrays And Objects
+
+      let array = [ 10,20,30,40]
+      let [a,b,c,d] = array
+      console.log(a,b);
+      console.log(d);
+
+      let obj = {
+        namee:"Musa",
+        agee:22,
+        gender:"male"
+      }
+      let {namee,agee,gender} = obj
+      console.log(agee,namee);      // Remeaning
+      
+      // Default Parameter
+
+      function massage(x="User",y="What Is your Name"){
+        console.log(x+y);
+      }
+      massage("Azhar Hussain","How Are You");
+      massage(undefined ,"You Are well")
+      massage()
+
+      // Rest And Spread Oprator
+
+        let mul = (...Rest)=>{
+            console.log(Rest);
+            // console.log();
+        }
+        mul(1,2,3,4,5,6,7,8,9)
+
+        let no1= ["a","b","c","d"]
+        let no2 = [...no1,"A","B","C","D"]
+        console.log(no1);
+        console.log(no2);
+
+        // Classs In Js
+            
+           class employes{
+            constructor(name,emploeeno,gender,city){
+              this.name = name;
+              this.emploeeno = emploeeno;
+              this.gender = gender;
+              this.city = city;
+            }
+           }
+           let emp1 = new employes("Azhar Hussain",1504,"Male","Nanded");
+           let emp2 = new employes("Sk Musa",1503,"Male","Nanded");
+           let emp3 = new employes("Sk Azeem",1502,"Male","Nanded");
+
+           console.log(emp1);
+           console.log(emp2);
+           console.log(emp3);
+          
+           
+           // Promise 
+           let p = new Promise((resolve,reject)=>{
+                let havedinner = false
+                if(havedinner == true){
+                    resolve("Ate Biryani And Had Tea ")
+                } else{
+                    reject("Eat Dal Chawal At Home")
+                }
+           })
+           p.then((m)=>{
+            console.log(m);
+           }).catch((n)=>{
+            console.log(n);
+           }).finally(
+            ()=>{
+                console.log("I am Finally Happy");
+            }
+           )
+
+
+
+          
+
+           const str = "hello";
+
+for (const char of str) {
+  console.log(char);
+  
+}
+for(let index in str){
+console.log(index);
+
+}
+// Output: 
+// h
+// e
+// l
+// l
+// o
+
+
+const person = {
+  name: 'Alice',
+  age: 25,
+  city: 'New York'
+};
+
+for (const key in person) {
+  // console.log(key + ": " + person[key]);
+  console.log(`${key} : ${person[key]}`);
+  
+  
+}
+for(let idx of person){
+  console.log(idx);
+}
+// Output: 
+// name: Alice
+// age: 25
+// city: New York
+
+
+const arr = [10, 20, 30];
+
+for (const index in arr) {
+  console.log(index);
+  // console.log(arr[index]);
+}
+// Output: 
+// 0
+// 10
+// 1
+// 20
+// 2
+// 30
+
+        
+       </script>
+</body>
+</html>

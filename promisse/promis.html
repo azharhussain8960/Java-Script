@@ -9,22 +9,87 @@
     <h1>Promisses In java script</h1>
 
     <script>
-        let p =new Promise ((resolved,reject)=>{
-            let doneDinner = true
-            if(doneDinner == true){
-           resolved()
-            }else{
-                reject()
-            }
-        })
-        p.then(()=>{
-            console.log("Done Dinner And Had Tea");
-        }).catch(()=>{
-            console.log("Ate Dal Chawal At Home");
+        // let p =new Promise ((resolved,reject)=>{
+        //     let doneDinner = true
+        //     if(doneDinner == true){
+        //    resolved()
+        //     }else{
+        //         reject()
+        //     }
+        // })
+        // p.then(()=>{
+        //     console.log("Done Dinner And Had Tea");
+        // }).catch(()=>{
+        //     console.log("Ate Dal Chawal At Home");
             
-        }).finally(()=>{
-            console.log("Afterall I Am Happy");
-        })
+        // }).finally(()=>{
+        //     console.log("Afterall I Am Happy");
+        // })
+
+
+
+        // let a=new Promise ((resolved
+        
+//         let a = new Promise((resolve, reject) => {
+//     // let prom = "azhar";
+//     let prom =+ prompt("what is your name")
+//     if (prom == "azhar") {
+//         resolve(prom);
+//     } else {
+//         reject(prom);
+//     }
+// });
+
+// a.then((prom) => {
+//     console.log(`Hello ${prom} How Are You`);
+// })
+// .catch((prom) => {
+//     console.log(prom + " I Don't Know Who You Are");
+// })
+// .finally(() => {
+//     console.log("I Am Happy To See You");
+// });
+
+
+// let a = new Promise((resolve, reject) => {
+//     let prom = prompt("What is your name?");
+    
+//     if (prom.toLowerCase() === "azhar") {  // Case-insensitive comparison
+//         resolve(prom);
+//     } else {
+//         reject(prom);
+//     }
+// });
+
+// a.then((prom) => {
+//     console.log(`Hello ${prom}, How Are You`);
+// })
+// .catch((prom) => {
+//     console.log(`${prom}, I Don't Know Who You Are`);
+// })
+// .finally(() => {
+//     console.log("I Am Happy To See You");
+// });
+
+
+let num =new Promise((resolve,reject)=>{
+    let numer =+ prompt("Enter a number");
+    if (numer > 10) {
+        resolve(numer);
+    }else{
+        reject(numer);
+    }
+})
+num.then((numer)=>{
+    console.log(`${numer} is Less Than 10`);
+}).catch((number)=>{
+    console.log(`${numer} is greater Than 10`);
+
+}).finally(()=>{
+    console.log("I am happy to see you");
+})
+
+
     </script>
 </body>
 </html>
